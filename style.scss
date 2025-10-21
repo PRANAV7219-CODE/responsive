@@ -32,7 +32,8 @@ main{
         flex-direction:column;
     
         .top{
-            width: 100%;
+            width: 100%;    
+
             img{
                 width: 100%;
                 padding: 1rem;
@@ -86,10 +87,30 @@ main{
 }
 
 @media (min-width:900px){
-    section {
-        flex-direction: row;
-        .top,.bottom{
-            width: 50%;
+    main{
+        section{
+            flex-direction: row;
+            gap:0.2rem;
+            .top,.bottom{
+                width: 50%;
+            }
+                .bottom{
+                    justify-content: space-between;
+                    padding: 3rem; 
+                    
+                    .text {
+                        h1{ 
+                            font-size:4em;
+                            line-height: 4.6rem;
+                    }
+
+                            p{
+                                font-size: 2rem;
+                            }
+
+                        
+                    }
+            }
         }
     }
 }

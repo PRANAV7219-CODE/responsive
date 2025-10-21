@@ -72,10 +72,24 @@ main section .bottom .text a {
 }
 
 @media (min-width: 900px) {
-  section {
+  main section {
     flex-direction: row;
   }
-  section .top, section .bottom {
+  main section .top, main section .bottom {
     width: 50%;
+  }
+  main section .bottom {
+    justify-content: space-between;
+    padding: 3rem;
+  }
+  main section .bottom .text h1 {
+    font-size: 4em;
+    line-height: 4.6rem;
+  }
+  main section .bottom .text h1 p {
+    font-size: 2rem;
+  }
+  main section .bottom .text h1 a {
+    font-size: 15rem;
   }
 }/*# sourceMappingURL=style.css.map */
